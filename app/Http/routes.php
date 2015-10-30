@@ -59,6 +59,8 @@ Route::get('admin/lock', 'AdminController@lock');
 Route::get('admin/masters', 'AdminController@masters');
 Route::get('admin/reports', 'AdminController@reports');
 
+Route::get('admin/crawl', 'AdminController@crawl');
+
 Route::get('test/facades', function(){
     $secret = 'dddd';//Crypt::encrypt('!qserf!');
     echo $secret ;

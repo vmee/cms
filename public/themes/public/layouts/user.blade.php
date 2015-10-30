@@ -20,7 +20,12 @@
 
     {!! Theme::partial('header') !!}
     <div class="container">
-    {!! Theme::content() !!}
+        <div class="row">
+        {!! Theme::partial('user_nav') !!}
+            <div class="col-lg-9 col-md-9">
+                {!! Theme::content() !!}
+            </div>
+         </div>
     </div>
     {!! Theme::partial('footer') !!}
     {!! Theme::asset()->container('footer')->scripts() !!}

@@ -25,8 +25,8 @@ class CrawlController extends Controller
     {
         //
 
-        $client = new Client();
-        $crawler = $client->request('GET', 'http://www.baidu.com/');
+        //$client = new Client();
+        //$crawler = $client->request('GET', 'http://www.baidu.com/');
 
         return $this->theme->of('public::user.crawl')->render();
     }
