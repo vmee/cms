@@ -70,3 +70,5 @@ Route::get('test/facades', function(){
     }
     echo $secret ;
 });
+
+Route::get('crawl', 'CrawlController@index');

@@ -3,6 +3,9 @@
     <head>
         <meta charset="UTF-8">
         <title>{{ Theme::getTitle() }}</title>
+        <meta name="description" content="{{ Theme::getKeywords() }}" />
+        <meta name="keywords" content="{{ Theme::getDescription() }}" />
+
         <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
         <meta name="csrf-token" content="{{ csrf_token() }}">
         {!! Theme::asset()->styles() !!}

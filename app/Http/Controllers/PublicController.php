@@ -26,6 +26,7 @@ class PublicController extends Controller
      */
     public function home()
     {
+
         $data['page'] = Page::getPageBySlug('home');
         $this->theme->setTitle($data['page']->title);
         $this->theme->setKeywords($data['page']->keyword);
